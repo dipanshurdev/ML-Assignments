@@ -1,6 +1,6 @@
 # Capstone Report — Prioritizing Search CTR Anomalies for Targeted Editorial Optimization
 
-- **Author:** Dipanshu (FlyRank ML Engineering Intern)
+- **Author:** Dipanshu Rawat (FlyRank ML Engineering Intern)
 - **Lane:** Content Performance & CTR Anomaly Ranking
 - **Repo:** [dipanshurdev/ML-Assignments](https://github.com/dipanshurdev/ML-Assignments)
 - **Date:** October 2026
