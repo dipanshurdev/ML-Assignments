@@ -159,3 +159,32 @@ Built on the **FlyRank ML Internship dataset** ([https://flyrank.ai](https://fly
 We express our gratitude to the FlyRank engineering and research teams for curating and providing access to 79 million rows of production search and web analytics telemetry.
 
 ---
+
+## 10. ML-12 — Capstone Communication Suite
+
+### 10.1 5-Minute Technical Demo Outline
+- **Min 0:00 - 1:00: Problem & Context** — Introduce the editorial triage dilemma across 79M production search events: high-visibility pages ranking on Page 1 but failing to convert impressions into clicks.
+- **Min 1:00 - 2:00: Data & Leakage Safeguards** — Highlight the safe data contract: scrubbing client PII, filtering to $1,000+$ impressions, and excluding `gsc_clicks` to avoid label leakage.
+- **Min 2:00 - 3:15: Methodology & Honest Grouped Validation** — Demonstrate why random train/test splits lie and explain the `GroupShuffleSplit` across client boundaries.
+- **Min 3:15 - 4:15: Results & Playbook Queue** — Showcase the 100% Precision@20 performance, top feature drivers (`ga4_sessions`, `gsc_impressions`), and the concrete editorial action queue.
+- **Min 4:15 - 5:00: Limitations & Next Steps** — Emphasize human-in-the-loop review, operational guardrails, and non-causal framing.
+
+### 10.2 Social Post Cut (LinkedIn / X)
+> **Can machine learning help editors recover lost organic traffic? 🔍**  
+> Using FlyRank's 79-million-row production search warehouse, I built a CTR anomaly detection system that identifies Page 1 search content with high visibility but low click-through rates.  
+> 
+> Key highlights:  
+> 📊 Evaluated with client-grouped cross-validation to guarantee generalization on unseen domains  
+> 🛡️ Audited against feature leakage (excluding direct click counts)  
+> 🎯 Achieved 100% Precision@20 in identifying actionable candidates for Title and Meta snippet rewrites  
+> 
+> Check out the live research paper: https://dipanshurdev.github.io/ML-Assignments/  
+> Built on the FlyRank ML Internship dataset (https://flyrank.ai).  
+> 
+> #MachineLearning #DataScience #SEO #InformationRetrieval #MLOps
+
+### 10.3 3-Sentence Employer-Facing Summary
+> *"Engineered an end-to-end CTR anomaly detection and ranking system using DuckDB and scikit-learn on a 79-million-row production search dataset from FlyRank. Validated under strict client-holdout cross-validation to prevent domain leakage, the Random Forest model achieved 100% Precision@20 against an empirical rule baseline. Translated model scores into an automated content action playbook that delivers prioritized title/snippet optimization queues for editorial teams."*
+
+---
+
