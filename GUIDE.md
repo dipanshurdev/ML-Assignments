@@ -3,7 +3,7 @@
 Five minutes here saves you hours later. This is the operating manual: what every file is,
 what you may edit, how the pieces connect, and where your own work goes.
 
-## 1. The map
+## 1. The Map
 
 | Path | What it is | Your relationship to it |
 |---|---|---|
